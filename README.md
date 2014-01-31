@@ -1,5 +1,7 @@
 ## Description
 
+Some configuration files and etc.
+
 ## MIT License
 
 Copyright (c) 2014 Orest Hrycyna
