@@ -1,0 +1,63 @@
+[user]
+	name = UName
+	email = UEmail
+[color]
+  ui = true
+[color "diff"]
+  whitespace = red reverse
+[alias]
+  d  = diff --patience --ignore-space-change
+  s  = show --patience --ignore-space-change
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  brpb = !git rev-parse --abbrev-ref HEAD | xargs echo -n | pbcopy
+  brcrnt = rev-parse --abbrev-ref HEAD
+  shas = log --pretty=format:\"%H\"
+  hist = log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  praise = blame
+  count = git shortlog -sn
+  standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author orest
+  standupweekly = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since last_week --author orest
+  ready = init
+  some = clone
+  down = pull
+  up = push
+  lost = stash
+  found = stash pop
+  overit = stash clear
+  in = add
+  out = rm
+  done = commit -m
+  it = commit -m
+  find = grep
+  wasted = reset HEAD
+  fuckedup = reset --hard
+  with = merge
+  real = rebase
+  home = checkout master
+  this = checkout
+  here = checkout
+  that = checkout -
+  there = checkout -
+  meow = status
+  wtf = status
+  what = diff
+  huh = diff
+  bah = blame
+  damnit = blame
+  eh = config --get-regexp alias
+[push]
+  default = upstream
+[core]
+	excludesfile = ~/.gitignore_global
+  editor = subl --wait
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
