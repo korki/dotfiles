@@ -3,3 +3,22 @@ Documentation:
 
 StringLiterals:
   Enabled: false
+
+HashSyntax:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+  AllowURI: true
+
+Style/DotPosition:
+  EnforcedStyle: leading
+
+Style/EmptyLinesAroundBody:
+  Enabled: false
+
+Style/ExtraSpacing:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false

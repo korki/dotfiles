@@ -35,6 +35,20 @@ eval "$(rbenv init -)"
     alias gh="   git hist"
     alias brpb=" git rev-parse --abbrev-ref HEAD | xargs echo -n | pbcopy"
 
+  # docker
+
+    alias dm='docker-machine'
+    alias dc='docker-compose'
+    alias dl='docker ps -a' # List containers
+    alias di='docker images' # List images
+    alias dr='docker run -it' # Run a command in a new container
+    alias db='docker build' # Build or rebuild services
+    alias ds='docker start' # Start one or more stopped containers
+    alias da='docker attach' # Attach to a running container
+    alias drm='docker rm -f' # Remove one or more containers
+    alias drmi='docker rmi -f' # Remove one or more images
+    alias qt='/Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh' # Open Docker Terminal
+
   # homebrew
     alias brew-formulas="open 'https://github.com/mxcl/homebrew/tree/master/Library/Formula'"
 
@@ -60,7 +74,7 @@ eval "$(rbenv init -)"
       else
         bundle exec "$@"
       fi
-    }    
+    }
 
   # Give it a # and a dir, it will cd to that dir, then `cd ..` however many times you've indicated with the number
   # The number defaults to 1, the dir, if not provided, defaults to the output of the previous command
@@ -119,6 +133,10 @@ eval "$(rbenv init -)"
   }
 
   PROMPT_COMMAND="build_mah_prompt;$PROMPT_COMMAND"
+
+  function title {
+      echo -ne "\033]0;"$*"\007"
+  }
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
