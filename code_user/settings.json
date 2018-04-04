@@ -1,0 +1,33 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.rulers": [100],
+    "ruby.lint": {
+        "rubocop": {
+            "lint": true,
+            "rails": true
+        }
+    },
+    "ruby.locate": {
+        "include": "**/*.rb",
+        "exclude": "{**/@(test|tmp|.*),**/@(test|tmp|.*)/**,**/*.rb}"
+    },
+    "ruby.intellisense": "rubyLocate",
+    "files.trimTrailingWhitespace": true,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "window.zoomLevel": -1,
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.iconTheme": "vs-minimal",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    }
+}

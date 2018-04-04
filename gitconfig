@@ -50,6 +50,7 @@
   bah = blame
   damnit = blame
   eh = config --get-regexp alias
+  allin = add .
 [push]
   default = upstream
 [core]

@@ -49,6 +49,9 @@ eval "$(rbenv init -)"
     alias drmi='docker rmi -f' # Remove one or more images
     alias qt='/Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh' # Open Docker Terminal
 
+    alias elasticsearch512='docker run -p 9200:9200 -e "http.host=0.0.0.0" -e "transport.host=127.0.0.1" docker.elastic.co/elasticsearch/elasticsearch:5.1.2'
+    alias portainer_start='docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer'
+
   # homebrew
     alias brew-formulas="open 'https://github.com/mxcl/homebrew/tree/master/Library/Formula'"
 
@@ -140,3 +143,4 @@ eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

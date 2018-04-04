@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"Coffee Color Scheme",
+		"CoffeeScriptHaml",
+		"Git",
+		"GitGutter",
+		"MarkdownEditing",
+		"Package Control",
+		"Pretty JSON",
+		"RuboCop",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-coffee",
+		"SublimeLinter-rubocop",
+		"Theme - Soda"
+	]
+}
