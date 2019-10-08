@@ -5,6 +5,9 @@ eval "$(rbenv init -)"
   export EDITOR='subl'
   export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
+#rvm
+  source ~/.profile
+
 # ALIASES
   # path
     alias     ..="cd .."
@@ -144,3 +147,4 @@ eval "$(rbenv init -)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
